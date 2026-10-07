@@ -1,0 +1,72 @@
+# PROMPT DE RECONSTRUÇÃO COMPLETA — PALAZZO PIZZARIA
+
+Você é um Engenheiro de Software Full-Stack Sênior e Especialista em UI/UX Premium.
+Seu objetivo é implementar ou estender o site oficial da **Palazzo Pizzaria** com fidelidade visual e funcional de 100%.
+
+---
+
+## 1. STACK E TECNOLOGIAS RECOMENDADAS
+- **Framework:** Next.js 14+ (App Router) ou React 18+ com Vite.
+- **Estilização:** Tailwind CSS (com Tailwind Animate).
+- **Ícones:** Lucide React / SVGs nativos.
+- **Tipografia:** Serif clássica para títulos (estilo italiano artesanal) e Sans-serif geométrica para corpo e botões.
+
+---
+
+## 2. DESIGN SYSTEM & IDENTIDADE VISUAL
+- **Cores Oficiais:**
+  - `farinha`: `#faf5ec` (fundo claro aconchegante)
+  - `trigo`: `#e8d9be` (fundo secundário, remetendo a massa)
+  - `trigo-claro`: `#f1e7d5`
+  - `basilico`: `#2f4a32` (verde manjericão elegante)
+  - `basilico-escuro`: `#1f3323`
+  - `basilico-noite`: `#172619`
+  - `pomodoro`: `#b23a26` (vermelho tomate artesanal)
+  - `torra`: `#4e3220` (marrom café/borda assada)
+  - `linha`: `#dccdb2` (bordas sutis)
+  - `oliva`: `#7a8450`
+
+---
+
+## 3. HERO SECTION (REQUISITO CRÍTICO DE ANIMAÇÃO)
+A Hero deve conter:
+1. **Pizza Giratória Contínua 360°:**
+   - A pizza principal (`hero-calabresa-catupiry.webp`) deve girar infinitamente de forma suave (`animation: girar 90s linear infinite`).
+2. **Ingredientes Flutuantes:**
+   - Folhas de manjericão e tomates frescos suspensos no ar com rotação e translação vertical leve (`animation: flutuar 7s ease-in-out infinite`).
+3. **Selo Circular Rotativo com TextPath:**
+   - Badge circular com a frase: `Catupiry original • Queijo do reino • Feita na hora •` girando ao redor da nota `4,96 NOTA`.
+4. **Status Dinâmico do Estabelecimento:**
+   - Badge com pulse verde: `🟢 Aberto agora · Fecha às 23:30` (baseado no horário atual da pizzaria).
+5. **Call to Actions:**
+   - `Pedir agora` (com rolagem suave para `#cardapio`)
+   - `Ver promoções` (com rolagem suave para `#oferta`)
+
+---
+
+## 4. FUNCIONALIDADES INTERATIVAS
+1. **Cardápio por Categorias:**
+   - Tabs: `Tradicionais`, `Especiais`, `Premium`, `Doces`, `Doces premium`, `Bebidas`.
+   - Cards com zoom e rotação suave da pizza no hover (`group-hover:rotate-[20deg]`).
+2. **Modal Montador de Pizza (Meio a Meio):**
+   - Escolha de tamanho (Grande ou Pequena).
+   - Seleção do 1º sabor e do 2º sabor (para dividir a pizza grande).
+   - Adicional de borda recheada (Catupiry Original, Cheddar, Borda Vulcão).
+   - Campo para observações (ex: sem cebola).
+   - Cálculo do preço somando as duas metades.
+3. **Carrinho Lateral (Drawer):**
+   - Controle de quantidade (`+` e `-`) e remoção de itens.
+   - Opção de `Entrega (30 min)` ou `Retirada no Balcão`.
+   - Campos de endereço e dados do cliente.
+   - Seleção de pagamento (Pix, Cartão de Crédito, Cartão de Débito, Dinheiro com troco).
+4. **Integração WhatsApp:**
+   - Botão para enviar pedido formatado diretamente para o número `5581995440632` com todos os itens, adicionais, endereço e total calculado.
+
+---
+
+## 5. DADOS DA PIZZARIA
+- **Nome:** Palazzo Pizzaria
+- **Cidade:** Vertentes - PE
+- **WhatsApp:** 5581995440632
+- **Avaliação:** 4.96 estrelas (54 avaliações reais)
+- **Tempo médio de entrega:** Cerca de 30 min
